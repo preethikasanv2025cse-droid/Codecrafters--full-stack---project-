@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Available Events</title>
+
+  <!-- Lottie Animation Script -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #1e1e2f, #2d3e50);
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      gap: 25px;
+    }
+
+    .robot {
+      width: 200px;
+    }
+
+    .events-box {
+      background: #3b3b54;
+      padding: 30px;
+      border-radius: 15px;
+      width: 65%;
+      box-shadow: 0px 0px 15px rgba(255,255,255,0.2);
+    }
+
+    .event-item {
+      background: #50506e;
+      padding: 18px;
+      margin: 12px 0;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .event-item button {
+      background: orange;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      color: black;
+      font-weight: bold;
+    }
+
+    .event-item button:hover {
+      background: darkorange;
+    }
+
+    .back-btn {
+      background: red;
+      padding: 10px 25px;
+      border-radius: 10px;
+      border: none;
+      margin-top: 25px;
+      cursor: pointer;
+      color: white;
+      font-size: 16px;
+    }
+
+    .back-btn:hover {
+      background: darkred;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🤖 Available Technical Workshops</h1>
+
+  <div class="container">
+    <!-- Left Robot -->
+    <lottie-player class="robot"
+      src="https://assets3.lottiefiles.com/packages/lf20_qp1q7mct.json"
+      background="transparent" speed="1" loop autoplay>
+    </lottie-player>
+
+    <div class="events-box" id="eventsList">
+      <p>Loading events...</p>
+    </div>
+
+    <!-- Right Robot -->
+    <lottie-player class="robot"
+      src="https://assets3.lottiefiles.com/packages/lf20_qp1q7mct.json"
+      background="transparent" speed="1" loop autoplay>
+    </lottie-player>
+  </div>
+
+  <button class="back-btn" onclick="window.location.href='index.html'">Back</button>
+
+  <script src="events.js"></script>
+
+</body>
+</html>

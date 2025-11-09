@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Event Ticket</title>
+
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #87CEFA, #E0FFFF);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .ticket-box {
+            background: #fff;
+            width: 380px;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+            text-align: center;
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #004d80;
+        }
+
+        .details {
+            margin: 15px 0;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        #qrcode {
+            margin-top: 15px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ticket-box">
+        <h2>🎟 Your Event Ticket</h2>
+        <div class="details">
+            <p><b>Name:</b> <span id="tName"></span></p>
+            <p><b>Department:</b> <span id="tDept"></span></p>
+            <p><b>Register No:</b> <span id="tReg"></span></p>
+            <p><b>Event:</b> <span id="tEvent"></span></p>
+        </div>
+
+        <div id="qrcode"></div>
+        <p style="margin-top:10px; color:#555;">Scan this QR at the registration desk 🤖</p>
+    </div>
+
+    <!-- QR Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+
+    <script src="ticket.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You</title>
+
+<style>
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #89CFF0, #E8F8FF);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+.robot {
+    width: 240px;
+    margin-top: 110px;
+    animation: wave 2s infinite ease-in-out;
+}
+
+@keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(5deg); }
+}
+
+h1 {
+    color: #003d73;
+    margin-top: 18px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* Confetti */
+.confetti {
+  position: fixed;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  background: random;
+  opacity: 0.9;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to { transform: translateY(110vh) rotate(360deg); }
+}
+</style>
+</head>
+<body>
+
+<img src="https://cdn-icons-png.flaticon.com/512/4712/4712100.png" class="robot" alt="Robot">
+<h1 id="thanks"></h1>
+
+<script src="thankyou.js"></script>
+
+</body>
+</html>

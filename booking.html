@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Event</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #89CFF0, #E8F8FF);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .form-container {
+            width: 420px;
+            background: white;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            margin: 60px auto;
+            text-align: left;
+        }
+
+        h2 {
+            text-align: center;
+            color: #004d80;
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #aaa;
+            margin-top: 4px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background: #007EDC;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #005c9b;
+        }
+
+        #selectedEventDisplay {
+            text-align:center;
+            font-size:18px;
+            color:#003d73;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Event Booking Form</h2>
+
+        <p id="selectedEventDisplay"></p>
+
+        <label>Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+
+        <label>Department:</label>
+        <select id="department">
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="IT">IT</option>
+            <option value="MECH">MECH</option>
+            <option value="CIVIL">CIVIL</option>
+        </select>
+
+        <label>Register Number:</label>
+        <input type="text" id="regNo" required>
+
+        <button onclick="confirmBooking()">Confirm Booking</button>
+    </div>
+
+    <script src="booking.js"></script>
+</body>
+</html>

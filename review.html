@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Review Your Details</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+  font-family: Poppins, sans-serif;
+  background: #dff5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.review-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+h2 { margin-bottom: 20px; }
+
+.detail { margin: 8px 0; font-size: 18px; }
+button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  width: 45%;
+  font-size: 16px;
+}
+#edit { background: #ffb703; }
+#confirm { background: #219ebc; color: white; }
+</style>
+</head>
+
+<body>
+<div class="review-box">
+    <h2>Review Your Details</h2>
+
+    <p class="detail" id="rName"></p>
+    <p class="detail" id="rEmail"></p>
+    <p class="detail" id="rDept"></p>
+    <p class="detail" id="rRegno"></p>
+    <p class="detail" id="rEvent"></p>
+
+    <button id="edit">Edit</button>
+    <button id="confirm">Confirm</button>
+</div>
+
+<script src="review.js"></script>
+</body>
+</html>

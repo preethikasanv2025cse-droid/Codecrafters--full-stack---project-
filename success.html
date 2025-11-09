@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Successful</title>
+
+<style>
+    body {
+        background: linear-gradient(135deg, #89CFF0, #E8F8FF);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding-top: 70px;
+    }
+
+    .ticket-box {
+        width: 420px;
+        background: rgba(255,255,255,0.85);
+        backdrop-filter: blur(10px);
+        padding: 25px;
+        border-radius: 16px;
+        margin: auto;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    h2 {
+        color: #004d80;
+        margin-bottom: 10px;
+    }
+
+    .details {
+        text-align: left;
+        font-size: 18px;
+        color: #003d73;
+        margin-top: 12px;
+        line-height: 1.6;
+    }
+
+    .thankyou {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #007EDC;
+    }
+</style>
+</head>
+<body>
+
+<div class="ticket-box">
+    <h2>🎉 Registration Successful 🎉</h2>
+
+    <div class="details">
+        <p><b>Student Name:</b> <span id="name"></span></p>
+        <p><b>Department:</b> <span id="dept"></span></p>
+        <p><b>Register Number:</b> <span id="reg"></span></p>
+        <p><b>Event:</b> <span id="event"></span></p>
+    </div>
+
+    <p class="thankyou">Thank you for registering! Enjoy the Event 😊</p>
+</div>
+
+<script src="success.js"></script>
+</body>
+</html>
